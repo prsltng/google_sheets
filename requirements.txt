@@ -1,0 +1,8 @@
+beautifulsoup4 
+selenium
+sys
+time
+gspread
+oauth2client
+pprint
+multiprocessing
