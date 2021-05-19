@@ -1,6 +1,5 @@
 beautifulsoup4 
 selenium
-time
 gspread
 oauth2client
 pprint
