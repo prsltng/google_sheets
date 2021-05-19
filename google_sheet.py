@@ -2,11 +2,9 @@ from bs4 import BeautifulSoup as BS
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import os
-import sys
 import time
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-import pprint
 from multiprocessing import Pool
 chrome_options = Options()
 chrome_options.add_argument("--headless")
