@@ -17,7 +17,7 @@ link = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/aut
 my_creds = ServiceAccountCredentials.from_json_keyfile_name('creds.json', link) #формируем данные для входа из нашего json файла
 client = gspread.authorize(my_creds)    # запускаем клиент для связи с таблицами
 sheet = client.open('sheet').sheet1    # открываем нужную на таблицу и лист
-print_p = pprint.PrettyPrinter()    # описываем прити принт
+
 
 
 def buy_BTC():
