@@ -14,7 +14,7 @@ chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
 driver = webdriver.Chrome(executable_path= os.environ.get("CHROMEDRIVER_PATH") , options=chrome_options)
 
 link = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']   # задаем ссылку на Гугл таблици
-my_creds = ServiceAccountCredentials.from_json_keyfile_name('E:/work/creds.json', link) #формируем данные для входа из нашего json файла
+my_creds = ServiceAccountCredentials.from_json_keyfile_name('google_sheets/creds.json', link) #формируем данные для входа из нашего json файла
 client = gspread.authorize(my_creds)    # запускаем клиент для связи с таблицами
 sheet = client.open('sheet').sheet1    # открываем нужную на таблицу и лист
 print_p = pprint.PrettyPrinter()    # описываем прити принт
